@@ -27,6 +27,5 @@ with open(filePath, 'rb') as file:
 			integers.append(int(tempBits, 2))
 			tempBits = ""
 		i += 1
-with open("integers.txt", "w") as outfile:
-	numpy_integers = np.asarray(integers)
-	numpy_integers.tofile(filePath + "-array.csv", sep="\n")
+numpy_integers = np.asarray(integers)
+numpy_integers.tofile(filePath + "-array.csv", sep="\n")
